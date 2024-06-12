@@ -12,7 +12,7 @@ type Role struct {
 	// 创建用户id（考虑到用户可以被删除，因此不做外键关联）
 	Creator int64 `gorm:"not null"`
 	// 角色名
-	Name string `gorm:"index:idx_role_name;unique;not null"`
+	Name string `gorm:"index:idx_role_name;not null"`
 	// 角色描述
 	Desc string `gorm:"not null"`
 }

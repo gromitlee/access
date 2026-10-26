@@ -385,11 +385,11 @@ func toRoleInfo(dbRole *model.Role) *perm.RoleInfo {
 }
 
 func roleID2CasbinSub(roleID int64) string {
-	return strconv.Itoa(int(roleID))
+	return strconv.FormatInt(roleID, 10)
 }
 
 func role2CasbinSub(role perm.Role) string {
-	return strconv.Itoa(int(role))
+	return strconv.FormatInt(int64(role), 10)
 }
 
 // []perm.Perm -> [][]string{{sub, obj, act}}

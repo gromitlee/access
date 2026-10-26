@@ -1,6 +1,6 @@
 package perm
 
-// Role 角色
+// Role 表示角色 ID，使用 int64 以支持雪花 ID。
 type Role int64
 
 // Obj 资源

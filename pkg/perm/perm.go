@@ -1,7 +1,7 @@
 package perm
 
 // Role 角色
-type Role uint32
+type Role int64
 
 // Obj 资源
 type Obj string

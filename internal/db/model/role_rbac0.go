@@ -6,7 +6,7 @@ import "github.com/gromitlee/access/pkg/perm"
 type RolePerm struct {
 	ID int64 `gorm:"primary_key"`
 
-	Role perm.Role `gorm:"index:idx_role_perm_role;not null"`
+	Role perm.Role `gorm:"index:idx_role_perm_role;not null;type:bigint"`
 	Obj  perm.Obj  `gorm:"index:idx_role_perm_obj;not null"`
 	Act  perm.Act  `gorm:"index:idx_role_perm_act;not null"`
 }
